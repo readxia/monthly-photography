@@ -1,0 +1,55 @@
+body { 
+    margin: 0; 
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    text-align: center;
+    color: rgb(210, 210, 210);
+    
+}
+nav {
+    display: flex;
+    justify-content: center;   /* centers everything horizontally */
+    align-items: center;
+    background: #000000;
+    padding: 2rem;
+    border-bottom: 1px solid #747474;
+}
+ul {
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+    margin: 0;
+    padding: 0;
+}
+li a {
+    color: rgb(210, 210, 210);
+    text-decoration: none;
+    transition: color 0.5s;
+    font-weight: bold;
+}
+li a:hover {
+    color: #ffe100;
+}
+
+/* FOR THE 3 IMAGE ROW */
+    .gallery {
+      display: flex;              /* puts items in a row */
+      justify-content: center;    /* centers the row */
+      gap: 2rem;                  /* space between items */
+      margin: 2rem;
+      flex-wrap: wrap;            /* allows wrapping on small screens */
+    }
+    .item {
+      text-align: center;         /* centers text under image */
+      width: 700px;               /* fixed width for each item */
+    }
+    .item img {
+      width: 100%;                /* image fills container */
+      height: auto;               /* keeps aspect ratio */
+      border-radius: 8px;         /* optional rounded corners */
+    }
+    .item p {
+      margin-top: 0.5rem;
+      font-size: 1rem;
+      color: #333;
+    }
